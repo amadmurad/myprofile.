@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Franklin's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23243a 0%, #3a1c71 100%);
+      color: #f8f8ff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: background 0.5s, color 0.5s;
+    }
+    .hero {
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      padding: 0;
+      box-shadow: 0 4px 24px rgba(58,28,113,0.15);
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      background: #fff;
+    }
+    h2 {
+      margin-top: 0.5rem;
+      font-size: 1.7rem;
+      color: #43e97b;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+      color: #bfc1c8;
+    }
+    .email-btn, .connect-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff61d2 0%, #38f9d7 100%);
+      color: #23243a;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(58,28,113,0.15);
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1.15rem;
+    }
+    .email-btn:hover, .connect-btn:hover {
+      background: linear-gradient(90deg, #38f9d7 0%, #ff61d2 100%);
+      color: #23243a;
+      transform: translateY(-2px) scale(1.04);
+    }
+    #cv-section {
+      margin-top: 2.5rem;
+      margin-bottom: 0;
+    }
+    #cv-section h2 {
+      color: #ff61d2;
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    #cv-section p {
+      color: #bfc1c8;
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+    #cv-section a.connect-btn {
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+    }
+    @media (max-width: 600px) {
+      .hero {
+        min-height: 100vh;
+        padding: 1.5rem 0.5rem;
+      }
+      .avatar {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      #cv-section h2 {
+        font-size: 1.3rem;
+      }
+      .email-btn, .connect-btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <img src="anime-profile-icon-man-vector.jpg" alt="Profile Picture" class="avatar">
+    <h2>Hi I'm Amad</h2>
+    <p>
+      I'm a versatile developer with skills in web, mobile, desktop apps, and embedded systems like Arduino—focused on creating smart, user-centered solutions.
+    </p>
+    <a href="mailto:amadmurad4@gmail.com" class="email-btn">Email Me</a>
+
+    <!-- CV Section Start -->
+    <section id="cv-section">
+      <h2>My CV</h2>
+      <p>You can view or download my CV below:</p>
+      <a href="AMAD.MYCV.pdf" download class="connect-btn">View CV</a>
+    </section>
+    <!-- CV Section End -->
+  </main>
+  <script>
+    // Always use dark mode
+    document.body.classList.remove('light');
+    document.body.classList.add('dark');
+  </script>
+</body>
+</html>
